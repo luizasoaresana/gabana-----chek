@@ -33,42 +33,42 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "O uso de agrotóxicos nas platações no que você acha no uso desses podutos?",
+        enunciado: "Como o uso de agrotóxicos deve ser gerenciado para garantir uma alimentação segura e sustentável no futuro? ",
         alternativas: [
             {
-                texto:"Para ",
+                texto:"Reduzir o uso de agrotóxicos por meio de regulamentações mais rigorosas e incentivo à agricultura orgânica.",
                 afirmacao:"afirmacao"
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto:"Integrar tecnologias avançadas para monitoramento e controle preciso dos agrotóxicos, minimizando riscos à saúde e ao meio ambiente.",
                 afirmacao:"afirmacao"
             }
             
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Qual é a melhor abordagem para garantir a segurança alimentar no futuro?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto:"Adoção de tecnologias avançadas, como a agricultura vertical e alimentos geneticamente modificados.",
                 afirmacao:"afirmacao"
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
+            texto:"Promoção de práticas agrícolas sustentáveis e dietas baseadas em alimentos locais e menos processados",
                 afirmacao:"afirmacao"
             }
             
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: " Qual estratégia é mais promissora para atender à crescente demanda por alimentos no futuro?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "Expansão da produção agrícola intensiva e uso de biotecnologia.",
                 afirmacao:"afirmacao"
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "Incentivo à agricultura regenerativa e à redução do desperdício de alimentos.",
                 afirmacao:"afirmacao"
             }
             
@@ -103,13 +103,13 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    
     atual++;
     mostraPergunta();
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Obrigada pelas respostas!...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
